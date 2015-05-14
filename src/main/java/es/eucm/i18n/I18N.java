@@ -15,9 +15,6 @@
  */
 package es.eucm.i18n;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -45,10 +42,6 @@ public class I18N {
 		messages.put(key, value);
 	}
 
-	public boolean addMessages(File file) {
-		return add(file, messages);
-	}
-
 	public boolean addMessages(InputStream inputStream) {
 		return add(inputStream, messages);
 	}
@@ -71,10 +64,6 @@ public class I18N {
 		variables.put(key, value);
 	}
 
-	public boolean addVariables(File file) {
-		return add(file, variables);
-	}
-
 	public boolean addVariables(InputStream inputStream) {
 		return add(inputStream, variables);
 	}
@@ -91,14 +80,6 @@ public class I18N {
 
 	public void clearVariables() {
 		variables.clear();
-	}
-
-	private boolean add(File file, Map map) {
-		try {
-			return add(new FileInputStream(file), map);
-		} catch (FileNotFoundException e) {
-			return false;
-		}
 	}
 
 	private boolean add(InputStream inputStream, Map map) {

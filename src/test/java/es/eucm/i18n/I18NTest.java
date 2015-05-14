@@ -18,10 +18,7 @@ package es.eucm.i18n;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
-
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class I18NTest {
@@ -46,8 +43,6 @@ public class I18NTest {
 				i18N.m("this {} has another {}", "argument", "thing"));
 		assertEquals("extra arguments 1 1 1 repeat",
 				i18N.m("extra arguments {} {} {} repeat", 1));
-
-		assertFalse(i18N.addMessages(new File("ñor")));
 	}
 
 	@Test
