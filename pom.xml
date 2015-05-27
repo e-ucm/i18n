@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>es.e-ucm</groupId>
     <artifactId>i18n</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>I18N</name>
     <description>A simple library for internationalization</description>
