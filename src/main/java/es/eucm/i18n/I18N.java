@@ -42,6 +42,10 @@ public class I18N {
 		messages.put(key, value);
 	}
 
+	public Map<String, String> getMessages() {
+		return messages;
+	}
+
 	public boolean addMessages(InputStream inputStream) {
 		return add(inputStream, messages);
 	}
@@ -62,6 +66,10 @@ public class I18N {
 
 	public void setVariable(String key, Object value) {
 		variables.put(key, value);
+	}
+
+	public Map<String, Object> getVariables() {
+		return variables;
 	}
 
 	public boolean addVariables(InputStream inputStream) {
