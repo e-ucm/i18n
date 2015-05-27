@@ -15,7 +15,7 @@ Maven dependency:
 <dependency>
     <groupId>es.e-ucm</groupId>
     <artifactId>i18n</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 
