@@ -77,6 +77,13 @@ public class I18N {
 	}
 
 	/**
+	 * @return the variable's value
+	 */
+	public Object getVariable(String variableName) {
+		return variables.get(variableName);
+	}
+
+	/**
 	 * Loads string variables from a string formatted as a properties file.
 	 * Current variables are not cleared.
 	 * 
